@@ -1,0 +1,261 @@
+
+/* ========== Global Styles ========== */
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-base: #e0f7fa;
+    -fx-background: #e0f7fa;
+    -fx-accent: #0288d1;
+    -fx-text-fill: #01579b;
+}
+
+/* ========== Menu Bar ========== */
+.menu-bar {
+    -fx-background-color: #0288d1;
+    -fx-padding: 5px;
+}
+
+.menu-bar .menu,
+.menu-bar .menu-item {
+    -fx-text-fill: #e0f7fa;
+    -fx-background-color: transparent;
+    -fx-padding: 5px 15px;
+}
+
+.menu-bar .menu:hover,
+.menu-bar .menu-item:hover {
+    -fx-background-color: #0277bd;
+}
+
+/* ========== Table View ========== */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #b3e5fc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #0288d1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-color: #0277bd;
+    -fx-padding: 10px 5px;
+}
+
+.table-view .table-cell {
+    -fx-padding: 10px;
+    -fx-border-color: #b3e5fc;
+    -fx-border-width: 0.5px;
+    -fx-text-fill: #01579b;
+    -fx-font-size: 13px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #e0f7fa;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #b3e5fc;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #0288d1;
+    -fx-text-fill: white;
+}
+
+/* ========== Buttons ========== */
+.button {
+    -fx-background-color: #0288d1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 20px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0277bd;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.button:pressed {
+    -fx-background-color: #01579b;
+}
+
+/* ========== Text Fields ========== */
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #01579b;
+    -fx-border-color: #b3e5fc;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #0288d1;
+    -fx-border-width: 1.5px;
+}
+
+/* ========== Combo Box ========== */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #b3e5fc;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #01579b;
+    -fx-padding: 8px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #0288d1;
+    -fx-background-radius: 0 4px 4px 0;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}
+
+/* ========== Status Bar ========== */
+.status-bar {
+    -fx-background-color: #b3e5fc;
+    -fx-border-color: #b3e5fc;
+    -fx-border-width: 1px 0 0 0;
+    -fx-padding: 10px;
+}
+
+.status-label {
+    -fx-text-fill: #01579b;
+    -fx-font-style: italic;
+    -fx-font-size: 13px;
+}
+
+/* ========== Dialogs ========== */
+.dialog-pane {
+    -fx-background-color: #e0f7fa;
+    -fx-border-color: #0288d1;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #0288d1;
+    -fx-padding: 15px;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px; /* Increased font size */
+}
+
+.dialog-pane .content.label {
+    -fx-text-fill: #01579b;
+    -fx-padding: 15px;
+    -fx-font-size: 18px; /* Increased font size */
+}
+
+/* ========== Text Area ========== */
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #b3e5fc;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px;
+    -fx-text-fill: #01579b;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+    -fx-background-radius: 4px;
+}
+
+/* ========== Alerts ========== */
+.alert {
+    -fx-background-color: #e0f7fa;
+    -fx-border-color: #0288d1;
+    -fx-border-width: 2px;
+}
+
+.alert .header-panel {
+    -fx-background-color: #0288d1;
+}
+
+.alert .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px; /* Increased font size */
+}
+
+.alert .content.label {
+    -fx-padding: 15px;
+    -fx-text-fill: #01579b;
+    -fx-font-size: 18px; /* Increased font size */
+}
+
+/* ========== Utility Classes ========== */
+.primary-bg {
+    -fx-background-color: #0288d1;
+    -fx-text-fill: white;
+}
+
+.secondary-bg {
+    -fx-background-color: #e0f7fa;
+    -fx-text-fill: #01579b;
+}
+
+.hover-effect:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(2,136,209,0.2), 5, 0, 0, 1);
+}
+
+.shadow-effect {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);
+}
+/* ========== Custom Labels ========== */
+.main-title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #6a1b9a; /* لون بنفسجي غامق */
+}
+
+.hero-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #01579b;
+}
+
+.hero-desc {
+    -fx-font-size: 16px;
+    -fx-text-fill: #0277bd;
+}
+
+.icon-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #01579b;
+}
+
+/* ========== Custom Buttons ========== */
+.shop-button {
+    -fx-background-color: #f48fb1;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px;
+}
+
+.back-button {
+    -fx-background-color: #0288d1;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 4px;
+}
+
